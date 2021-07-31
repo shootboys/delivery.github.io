@@ -1,0 +1,39 @@
+.header{
+  text-align: center;
+  background-image: url(https://lh3.googleusercontent.com/proxy/n2XPuw_1oUEHrTASAUHgY3PFKTIlvg3r0ccR5jjJEMunjtwBZP8kogX1IbIx3fN24R890UZQMuUFDd8fAp6H4ert3dliQEWwNyUEjs5wQCZq5w);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 80px;
+  padding-top: 30px;
+  }
+
+.text{
+  background: blue;
+
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+  background-image: url(https://image.freepik.com/free-photo/beach-sea-sand-background_63047-1206.jpg);
+}
+.list2{
+  background-image: url(https://image.freepik.com/free-photo/beach-sea-sand-background_63047-1206.jpg);
+  height: 300px;
+}
+.footer{
+  background:linear-gradient(blue, skyblue);
+  height: 80px;
+  width: 100%;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.line{
+  border: double;
+}
+.explain{
+  display: flex;
+} 
