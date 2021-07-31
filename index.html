@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+     
+      var ncmb = new NCMB("57f1e1df2532c163e6aaa09dc43f52ea3fac15269c1a51b2f10c6c0d474047de", "09305df1280c4ab5e6940fb8626eabe54f68ef8883e1517c307cde21fdbbbf8d");
+     function pushButton() {
+    
+       var products = document.getElementById("products").value;
+       var proNumber = document.getElementById("proNumber").value;
+       var place = document.getElementById("place").value;
+       
+    
+        alert("商品が届くまでその場でお待ちください");
+       var MessageBlack = ncmb.DataStore("MessageBlack");
+
+       var messageClass = new MessageBlack();
+      
+       messageClass.set("product", products)
+                   .set("number" , proNumber)
+                   .set("space", place)
+                   .save();
+       
+      }
+    
+          
+    </script>
+</head>
+<body>
+ <script>
+
+ </script>
+ <div class="header">
+   <font size="6">サークル=久=サンクス</font>
+ </div>
+ <div align="center" class="text">
+   <font color="white" size="4">ーー<u><strong>＜ラーメン＞</strong></u>ーーーーー<u><strong>＜　パン　＞</strong></u>ーーーーー<u><strong>＜ジュース＞</strong></u>ーー</font>
+ </div>
+ <div class="list">
+   <ur>
+     <li>ごつ盛りソース焼きそば</li>
+     <li>ごつ盛り塩焼きそば</li>
+     <li>味噌ラーメン</li>
+     <li>あっさりカレーヌードル</li>
+     <li>あっさりシーフードヌードル</li>
+     <li>醤油ラーメン</li>
+   </ur>
+   <ur>
+     <li>ラムネ</li>
+     <li>綾鷹</li>
+     <li>コーラ</li>
+   </ur>
+   <ur>
+     <li>マッチ</li>
+     <li>コカ・コーラ</li>
+     <li>三ツ矢サイダー</li>
+     <li>ファンタグレープ</li>
+     <li>カルピスウォーター</li>
+     <li>小岩井純粋りんご</li>
+     <li>バヤリースオレンジ</li>
+   </ur>
+ </div>
+ <div class="list2">
+   <font>
+     　　　　<u>全種２００円</u>　　　　　　　<u>全種００円</u>　　　　　　　　<u>各種１３０円</u><br>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<u>ラムネ１５０円</u></br>
+   </font>
+   <hr color="black" class="line">
+   <p>＜商品情報記入欄＞</p>
+   <p>ご注文の商品の種類が複数だった場合は「商品」と「注文数」をコンマで区切ってご記入ください。</p>
+   <div class="explain">
+    <p>商品</p>
+    <input type="text" id="products">
+    <p>注文数</p>
+    <input type="text" id="proNumber">
+    <p>場所</p>
+    <input type="text" id="place">
+   </div>
+   <button class="button" onclick="pushButton();">送信</button>
+ </div>
+ <div class="footer">
+   
+ </div>
+
+
+
+ 
+  
+
+  
+
+
+
+
+
+    
+</body>
+</html>
